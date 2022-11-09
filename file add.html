@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- BÀI 1 -->
+    <div>
+        <h2>BÀI 1</h2>
+        <input type="text" id="numA">
+        <input type="text" id="numB">
+        <input type="button" value="check" onclick="check()">
+    </div>
+
+    <!-- BÀI 2 -->
+    <div>
+        <h2>BÀI 2</h2>
+        <input type="text" id="name">
+        <input type="button" value="Login" onclick="login()">
+    </div>
+</body>
+
+<script>
+    function check() {
+        let a = parseInt(document.getElementById('numA').value);
+        let b = parseInt(document.getElementById('numB').value);
+        (a + b) < 4 ? alert('Below') : alert('Over');
+    }
+
+    function login() {
+        let Name = document.getElementById('name').value;
+        Name == 'Employee' ? 
+        alert('Hello') : Name == 'Director'?
+        alert('Greetings') : Name == "" ?
+        alert('No login') : alert('Lỗi')
+    } 
+</script>
+</html>
